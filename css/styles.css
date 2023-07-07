@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.body {
+  font-family: "Fira Mono", monospace;
+  background-color: white;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.oops {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  height: 100vh;
+}
+
+.oops__text {
+  margin: 0;
+  font-size: 180px;
+  font-weight: 900;
+  background: url("../img/universe.webp");
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.oops__add {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #6F6092;
+}
+
+@media (max-width: 576px) {
+
+  .oops {
+    align-items: baseline;
+  }
+
+  .oops__text {
+    font-size: 100px;
+  }
+
+  .oops__add {
+    width: 65%;
+    font-size: 20px;
+  }
+
+}
